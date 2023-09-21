@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" autocomplete="off" class="input-fields" id="query">
+        <input type="text" autocomplete="off" class="input-fields" id="answer" placeholder="0" disabled>
+        <div>
+            <button class="btn" id="acBtn" onclick="clearAll()">AC</button>
+            <button class="btn" id="delBtn" onclick="clearLast()">DEL</button>
+            <button class="btn operators btn-inp">%</button>
+            <button class="btn operators btn-inp">/</button>
+        </div>
+        <div>
+            <button class="btn btn-inp">7</button>
+            <button class="btn btn-inp">8</button>
+            <button class="btn btn-inp">9</button>
+            <button class="btn operators btn-inp">*</button>
+        </div>
+        <div>
+            <button class="btn btn-inp">4</button>
+            <button class="btn btn-inp">5</button>
+            <button class="btn btn-inp">6</button>
+            <button class="btn operators btn-inp">-</button>
+        </div>
+        <div>
+            <button class="btn btn-inp">1</button>
+            <button class="btn btn-inp">2</button>
+            <button class="btn btn-inp">3</button>
+            <button class="btn operators btn-inp">+</button>
+        </div>
+        <div>
+            <button class="btn btn-inp">0</button>
+            <button class="btn btn-inp">00</button>
+            <button class="btn btn-inp">.</button>
+            <button class="btn" id="equaltoBtn" onclick="calculate()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>

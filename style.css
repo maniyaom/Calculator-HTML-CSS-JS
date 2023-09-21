@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --default-font : 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg,black,#5e5e5e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 19.3%;
+    height: 60%;
+    padding: 18px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px #fff;
+            box-shadow: 0 0 5px #fff;
+}
+
+::placeholder{
+    color: white;
+}
+
+.input-fields {
+    width: 96%;
+    height: 15%;
+    margin-left: 5px;
+    outline: none;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#query{
+    font-size: 20px;
+    height: 6%;
+    color: rgba(255, 255, 255,0.6);
+    letter-spacing: 1.6px;
+}
+
+#answer{
+    font-size: 35px;
+    letter-spacing: 0.6px;
+}
+
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    /* background: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%); */
+    background-color: transparent;
+    color: white;
+    box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.5);
+    margin: 5px;
+    font-size: 20px;
+    font-family: var(--default-font);
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+
+#equaltoBtn{
+    background: linear-gradient(130deg, #fab823, #f9a315, #f3770d, #ee5f13);
+}
+
+#acBtn, #delBtn{
+    background: linear-gradient(25deg, #24C6DC 10%, #514A9D  100%, #24C6DC  100%);
+}
+
+@media screen and (max-width: 400px) {
+    .calculator{
+        width: 75%;
+        height: 54%;
+    }
+
+    .btn{
+        width: 54px;
+        height: 54px;
+    }
+}
