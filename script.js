@@ -14,7 +14,7 @@ function calculate(){
     try{
         x = eval(document.querySelector("#query").value);
     } catch{
-        document.querySelector("#answer").value = "Invalid Sytanx";
+        document.querySelector("#answer").value = "Invalid Syntax";
     }
     if(x.toString().length > 13){
         x = x.toFixed(11);
